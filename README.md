@@ -1,11 +1,11 @@
 # Abstract
 
-`hazelcast-member` is a command line tool that is able to run one or more Hazelcast member
+`hazelcast member` is a command line tool that is able to run one or more Hazelcast member
 instance(s) on the local machine.
 
 This repository contains:
 
-- the `hazelcast-member` command and related scripts;
+- the `hazelcast member` command and related scripts;
 - a Makefile for creating a distribution of Hazelcast that includes the above command
 
 ## Getting started
@@ -33,16 +33,16 @@ provided through special options such as `--port`.
 
 As such, we don't recommend that you edit the file directly.
 You may want to create a copy of it for specifying custom configurations, then use
-`hazelcast-member start --config <file>` to use the custom file.
+`hazelcast member start --config <file>` to use the custom file.
 
 In that case, you may either replace the above-mentioned variables with specific
 values, or – if you want to provide a value for a specific variable – you can use
 the `-J` option followed by `-D` in order to set a system property,
 e.g., `-J -Dnetwork.port=8000`.
 
-Run `hazelcast-member help start` to display all the available options.
+Run `hazelcast member help start` to display all the available options.
 
 ### READMEs
 
-- How to use the `hazelcast-member` command: [Running `hazelcast-member`](README-Running.txt)
+- How to use the `hazelcast member` command: [Running `hazelcast-member`](README-Running.txt)
 - How to create a self-contained distribution archive: [Package HowTo](README-Package-HowTo.md)
